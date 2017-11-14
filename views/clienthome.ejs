@@ -1,0 +1,23 @@
+<% include partials/header %>
+<% include partials/navbar %>
+<p class="header" >Upload Images</p>
+<div class="login-form">
+    <div class="wrapper">
+        <p>Hello, client!</p>
+        <form method = "post" action = "upload" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="Title" autocomplete="off">
+<!--            <input type="text" name="folderr" placeholder="Folder">-->
+            <select name="folder">
+                <option value="uploads">Select Folder...</option>
+                <option value="uploads">Uploads</option>
+                <option value="good">Good</option>
+                <option value="better">Better</option>
+                <option value="best">Best</option>
+            </select>
+            <input type="file" name="fileToUpload">
+<!--            <div class="browse"></div> -->
+            <input type="submit" value="Upload" name="upload">
+        </form>
+    </div>
+<div>
+<% include partials/footer %>

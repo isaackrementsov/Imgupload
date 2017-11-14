@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" src="img/favicon.ico"/>
+    <title>Krementcook</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : 'your_site_key'
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <p class="header">Upload Images</p>
+    <div class="login-form">
+        <div class="wrapper">
+            <p>Welcome to your personal server!</p>
+            <p>Login!</p>
+            <form method="post" action="/">
+                <input placeholder="Username" type="text" name="username" autocomplete="off">
+                <input placeholder="Password" type="password" name="password">
+                <div id="html_element"></div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
+ <% include partials/footer %>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    background-color: #F5F5F5;
+    color: #5C5C5C;
+    background-image: url("../img/materialbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body{
+    background-image: url("../img/materialbg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+input[type="text"], input[value="Submit"], input[value="Upload"], input[value="Find"], input[type="password"], input[type="email"], .html_element, input[type="file"], select {
+    display: block;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="text"], input[type="password"], input[type="email"], select {
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: #A8A8A8;
+    background-color: #FAFAFA;
+    color: #A8A8A8;
+    font-size: 2.5vh;
+}
+select{
+    border-bottom-width: 2px;
+    color: #A3A3A3;
+    outline: none;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus{
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: #FF5722;
+    background-color: #FAFAFA;
+    color: #FF5722;
+    font-size: 2.5vh;
+}
+input[type="password"]{
+    margin-bottom: 2vh;
+}
+p {
+    margin-top: 0vh;
+    font-size: 3.5vh;
+    text-align: center;
+}
+.html_element{
+    margin-top: 5vh;
+}
+input[value="Submit"], input[value="Upload"], input[value="Find"]{
+    border-style: hidden;
+    background-color: #FF5722;
+    color: #F5F5F5;
+    padding: 15px 32px;
+    border-radius: 1px;
+    font-size: 3vh;
+}
+.login-form{
+    border-style: hidden;
+    border-radius: 3px;
+    width: 35vw;
+    background-color: #FAFAFA;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    box-shadow: 5px 5px 20px #454545;
+}
+iframe{
+    width: 20w;
+    height: 15vh;
+    margin-left: 15vh;
+}
+.wrapper{
+    width: 34vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;       
+}
+.header{
+    margin-top: 0vh;
+    font-size: 5vh;
+    font-weight: lighter;
+    border-style: hidden;
+    border-bottom-style: solid;
+    border-bottom-color: #FF5722;
+    color: #FF5722;
+    width: 16vw;
+    height: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4vh 3vw;
+}
+input[value="Logout"], input[value="Delete"], a.navlink, a.navlink2{
+    margin-top: 2vh;
+    border-style: hidden;
+    background-color: darkslategrey;
+    color: #F5F5F5;
+    padding: 15px 32px;
+    border-radius: 1px;
+    font-size: 3vh;
+    text-decoration: none;
+    position: fixed;
+}
+input[type="file"]{
+    border-style: hidden;
+    color: #A8A8A8;
+    box-shadow: 2.5px 2.5px 10px darkgrey;
+    border-width: 1px;
+    padding: 15px 32px;
+    border-radius: 1px;
+    font-size: 3vh;  
+}
+input[type="file"]:focus{
+    color: #FF5722;
+    box-shadow: 5px 5px 20px darkgrey;
+}
+form[action='/out']{
+    position: fixed;
+    left: 60vw;
+    height: 10vh;
+    width: 40vw;
+    float: right;
+    margin-right: 1vw; 
+}
+input:focus, select:focus{
+    outline: none;
+}
+.navlink{
+    left: 90vw;
+}
+input[value="Logout"], input[value="Delete"]{
+    left: 80vw;
+}
+.navlink2{
+    left: 70vw;
+}
+.filefolder{
+    display: block;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #A8A8A8;
+}
+.filefolder:hover{
+    background-color: #F5F5F5;
+    color: #454545;
+}
+.image{
+    position: fixed;
+    width: 60vw;
+    margin-left: auto;
+    right: 20vw;
+    bottom: 10vh;
+    margin-right: auto;
+    margin-top: 20vh;
+}
+.imgpopup{
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height:100vh;
+    top: 0vh;
+    left: 0vh;
+	background-color: rgba(100, 100, 100, 0.5);
+}
+div.imageinfo{
+    padding-bottom: 2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.thumbnail{
+    height: 4vh;
+    margin-right: 1vh;
+}
+.imgbutton{
+    display: inline;
+}
+select[name="deleteimage"], select[name="deletepath"]{
+    display: none;
+}

@@ -1,0 +1,36 @@
+<%include partials/header%>
+<%include partials/navbar%>
+<p class="header" >Upload Images</p>
+<script>
+function openimg(value) {
+	document.getElementById(value).style.display = "block";
+}
+function closeimg(value) {
+	document.getElementById(value).style.display = "none";
+}	
+</script>
+<div class="login-form">
+    <div class="wrapper">
+        <p>View your Images!</p>
+        <a class="filefolder" href="/view">Back</a> 
+          <% for(var i = 0; i < displayedimages.length; i++){%>
+            <div class="filefolder" onclick="openimg('<%=displayedimages[i].title%>')"><img class="thumbnail"src="img/<%=displayedimages[i].folder + '/' + displayedimages[i].filename%>"><%=displayedimages[i].title%> | <%=displayedimages[i].mimetype%> | <%=displayedimages[i].size%> bytes</div>
+            <div class="imgpopup" id="<%=displayedimages[i].title%>">
+            <form method="post" action="/delete">
+                <a class="navlink" onclick="closeimg('<%=displayedimages[i].title%>')">X</a>
+                <% if(sessionstatus){ %>
+                <select name="deleteimage">
+                    <option value="<%=displayedimages[i].filename%>"></option>
+                </select>
+                <select name="deletepath">
+                    <option value="<%=displayedimages[i].folder%>"></option>
+                </select>
+                <input type="submit" value="Delete">
+                <% } %>
+            </form>
+            <img class="image" src="img/<%=displayedimages[i].folder + '/' + displayedimages[i].filename%>"/>
+            </div>
+        <%}%>
+    </div>
+<div>
+<%include partials/footer%>
