@@ -6,7 +6,6 @@ module.exports = {
                 return handleError(err);
             };
         });
-        res.status(204).end();
         res.redirect("client");
     },
     view: function(req,res){
